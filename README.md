@@ -1,1 +1,11 @@
-# deleteFromBST
+A tree is considered a binary search tree (BST) if for each of its nodes the following is true:
+
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and the right subtrees must also be binary search trees.
+Removing a value x from a BST t is done in the following way:
+
+If there is no x in t, nothing happens;
+Otherwise, let t' be a subtree of t such that t'.value = x.
+If t' has a left subtree, remove the rightmost node from it and put it at the root of t';
+Otherwise, remove the root of t' and its right subtree becomes the new t's root.
